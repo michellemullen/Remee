@@ -49,6 +49,10 @@ ul {
 	padding: 10px; 
 	margin-left:150px;
 }
+#tagline {
+	margin-top: 20px;
+	padding: 20px 0px 0px 0px;
+}
 #article {
 	clear: both;
 	float: left;
@@ -63,21 +67,33 @@ ul {
 	width: 100%;
 	display: block;
 }
-.description {
+#description {
 	clear: both;
 	float: left;
 	margin-left: 0;
-	width: 100%;
+	padding: 20px;
+	width: 95%;
 	display: block;
+	min-height: 400px;
 }
-.program {
+#program {
 	clear: both;
 	float: left;
 	margin-left: 0;
-	padding: 20px, 0, 0, 0;
-	width: 100%;
+	padding: 20px;
+	width: 95%;
 	display: block;
 	background-color: FFF;
+	min-height: 300px;
+}
+button1 {
+	padding: 15px 40px 15px 40px;
+	margin: 15px 5px 5px 1px;	
+	
+}
+button2 {
+	padding: 15px;
+	margin: 40px 5px 5px 1px;
 }
 #footer {
 	clear: both;
@@ -85,6 +101,8 @@ ul {
 	margin-left: 0;
 	width: 100%;
 	display: block;
+	padding:15px;
+	box-shadow: 10px 0px 0px 0px #888888;
 }
 
 
