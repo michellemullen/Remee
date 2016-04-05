@@ -1,9 +1,16 @@
 @charset "UTF-8";
 body {
-	background-color: #FFF;	
+	background-color: #FFF;
 }
 #header {
 	background-color:#93c9ff;
+}
+#header ul li a {
+	color:#fff;
+	text-decoration:none;
+}
+#tagline {
+	text-align: center;
 }
 #footer {
 	background-color:#93c9ff;
@@ -21,13 +28,13 @@ h2 {
 	font-family: 'Roboto', sans-serif;
 	font-weight:400;
 	font-size: 36px;
-	color: #50555b;	
+	color: #50555b;
 }
 h3 {
 	font-family: 'Roboto', sans-serif;
 	font-weight: 400;
 	font-size: 48px;
-	color: #000;	
+	color: #000;
 }
 h4 {
 	font-family: 'Roboto', sans-serif;
@@ -39,12 +46,11 @@ p {
 	font-family: 'Roboto', sans-serif;
 	font-weight: 300;
 	font-size: 20px;
-	color: #000;	
+	color: #000;
 }
 #description {
 }
 #program {
-	background-color: #eeeeee;
 }
 button1 {
 	font-family: 'Roboto', sans-serif;
@@ -63,15 +69,15 @@ button2 {
 	border:none;
 }
 a:link {
-	color:#FFF;
+	color:#93c9ff;
 	text-decoration:none;
 }
 a:visited {
-	color:#FFF;
+	color:#93c9ff;
 	text-decoration:none;
 }
 a:hover {
-	color:#FFF;
+	color:#93c9ff;
 	text-decoration:none;
 }
 li{
@@ -88,6 +94,6 @@ li{
 	color: #fff;
 }
 li:hover {
-	color:#FFF;
+	color:#93c9ff;
 	text-decoration:none;
 }

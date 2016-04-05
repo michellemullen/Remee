@@ -7,14 +7,14 @@
 <!--<![endif]-->
 <head>
 <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="chrome=1" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Remee</title>
+<title>Remee | Our Team</title>
 <link href="boilerplate.css" rel="stylesheet" type="text/css">
 <link href="layout.css" rel="stylesheet" type="text/css">
-<link href='http://fonts.googleapis.com/css?family=Sofadi+One' rel='stylesheet' type='text/css'>
 <link href="design.css" rel="stylesheet" type="text/css">
 <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500,700' rel='stylesheet' type='text/css'>
-<!-- 
+<!--
 To learn more about the conditional comments around the html tags at the top of the file:
 paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/
 
@@ -22,65 +22,141 @@ Do the following if you're using your customized build of modernizr (http://www.
 * insert the link to your js here
 * remove the link below to the html5shiv
 * add the "no-js" class to the html tags at the top
-* you can also remove the link to respond.min.js if you included the MQ Polyfill in your modernizr build 
+* you can also remove the link to respond.min.js if you included the MQ Polyfill in your modernizr build
 -->
 <!--[if lt IE 9]>
 <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
 <script src="respond.min.js"></script>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+
+<script src="modernizr-newest.min.js"></script>
+
+<script>
+			$(document).ready(function() {
+				$('.hover').bind('touchstart touchend', function(e) {
+					e.preventDefault();
+					$(this).toggleClass('hover_effect');
+				});
+			});
+		</script>
+
+<meta name="viewport" content="width=device-width,maximum-scale=1.0" />
+
+<script>
+	$(document).ready(function() {
+		$("#slide2-1").click(function() {
+			$("#slide2_images").css("-webkit-transform","translate(0px, 0px)");
+			$("#slide2_images").css("-moz-transform","translate(0px, 0px)");
+			$("#slide2_images").css("-o-transform","translate(0px, 0px)");
+			$("#slide2_images").css("transform","translate(0px, 0px)");
+			$("#slide2_controls span").removeClass("selected");
+			$(this).addClass("selected");
+		});
+		$("#slide2-2").click(function() {
+			$("#slide2_images").css("-webkit-transform","translate(-400px, 0px)");
+			$("#slide2_images").css("-moz-transform","translate(-400px, 0px)");
+			$("#slide2_images").css("-o-transform","translate(-400px, 0px)");
+			$("#slide2_images").css("transform","translate(-400px, 0px)");
+			$("#slide2_controls span").removeClass("selected");
+			$(this).addClass("selected");
+		});
+		$("#slide2-3").click(function() {
+			$("#slide2_images").css("-webkit-transform","translate(-800px, 0px)");
+			$("#slide2_images").css("-moz-transform","translate(-800px, 0px)");
+			$("#slide2_images").css("-o-transform","translate(-800px, 0px)");
+			$("#slide2_images").css("transform","translate(-800px, 0px)");
+			$("#slide2_controls span").removeClass("selected");
+			$(this).addClass("selected");
+		});
+		$("#slide2-4").click(function() {
+			$("#slide2_images").css("-webkit-transform","translate(-1200px, 0)");
+			$("#slide2_images").css("-moz-transform","translate(-1200px, 0px)");
+			$("#slide2_images").css("-o-transform","translate(-1200px, 0px)");
+			$("#slide2_images").css("transform","translate(-1200px, 0px)");
+			$("#slide2_controls span").removeClass("selected");
+			$(this).addClass("selected");
+		});
+	});
+</script>
+
 </head>
-    <div id="header">
-        <a href="index.html"><img src="assets/remee-logo.png" alt="Remee" style="padding: 15px 0px 0px 15px;"></a>
-        <ul style="float:right;">
-                <li><a href="lucid-dreaming.html">What Is Lucid Dreaming?</a></li>
-                <li><a href="our-team.html">Our Team</a></li>
-                <li><a href="faq.html">FAQ</a></li>
-                <li><a href="program-remee.html">Program Remee</a></li>
-            </ul>
-        </div>
-        
-     
-        <body>
-    <div class="gridContainer clearfix">
-    
-        <div id="tagline">
-        	<h2>The world's first comfortable, affordable lucid dreaming sleepmask.</h2>
-        </div>
-                    
-        <div class="video">
-    		<video controls>
-      		<source src="http://iupui.edu/~streamit/N501/mullenm/remee/animatedlogo.mp4" type="video/mp4">
-    		</video>
-  		</div>	
-    
-        <div id="description">
-            <h3>What is Remee?</h3>
-            <img src="assets/what-is-remee.png" alt="Remee" style="width:400px; float:right; padding:10px;">
-            <h4>Remee is a sleep mask designed to help increase the frequency of your Lucid Dreams.</h4>
-            <p>Using low profile electronics hidden in a comfortable sleep mask, Remee supplies customizable light patterns that your dreaming mind can recognize, allowing you to take control. Whether you've only just discovered lucid dreaming or you're a veteran trying to get lucid more often, Remee can help!</p>
-            <button1>Learn More</button1>
-            <button2>Purchase Remee</button2>
-            
-            
-            
-        </div>
-        
-        <div id="program">
-            <img src="assets/remee-lights.gif" alt="Program Remee"style="width:400px; float:left; padding:10px;">
-            <h3>Program Remee</h3>
-            <p>Remee's six LEDs serve as your touchstone to the waking world. Using our online tool, you can personalize your dream signal to create a combination of pattern, timing, and brightness that is unique to your sleep style.</p>
-            
-            
-        </div>
-        </div>
-    	
-        
-    <div id="footer">
-    	&copy; 2016 Remee | All rights reserved.
-        <span style="float:right;">Josh Corken | Michelle Mullen | Haley Rios | Charles Yu</span>
+  <div id="header">
+		<div id="headercontent"
+    <a href="index.html"><img src="assets/remee-logo.png" alt="Remee" style="padding: 15px 0px 0px 15px;"></a>
+    <ul style="float:right;">
+      <li><a href="lucid-dreaming.html">What Is Lucid Dreaming?</a></li>
+      <li><a href="our-team.html">Our Team</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="program-remee.html">Program Remee</a></li>
+    </ul>
+	</div>
+  </div>
 
-    
-</div>            
+<body>
+  <div class="gridContainer clearfix">
+  <div id="pgtitle">
+  	<h3>Our Team</h3>
+  </div>
+
+  <div class="bioimg">
+    <img src="assets/video-editing.jpg" alt="Josh Corken" style="width:100%">
+    <div class="biocontainer">
+      <h4>Josh Corken</h4>
+      <p>Josh's Bio Here.
+      <br><a href="">View Josh's website</a></p>
+    </div>
+  </div>
+
+  <div class="bioimg">
+    <img src="assets/michellemullen.png" alt="Michelle Mullen" style="width:100%">
+    <div class="biocontainer">
+      <h4>Michelle Mullen</h4>
+      <p>Michelle is a designer, illustrator, and web developer currently living in Indianapolis. She graduated with a Bachelor of Fine Arts from Herron School of Art and Design in 2013 and is currently employed by her alma mater. She hopes to one day write an interactive browser-based webcomic, because that would be rad.
+      <br><a href="">View Michelle's website</a></p>
+    </div>
+  </div>
+
+  <div class="bioimg">
+    <img src="assets/haleyrios.jpg" alt="Haley Rios" style="width:100%" style="clear=left">
+    <div class="biocontainer">
+      <h4>Haley Rios</h4>
+      <p>Haley's Bio Here.
+      <br><a href="">View Haley's website</a></p>
+    </div>
+  </div>
+
+  <div class="bioimg">
+    <img src="assets/charlesyu.jpg" alt="Charles Yu" style="width:100%">
+    <div class="biocontainer">
+      <h4>Charles Yu</h4>
+      <p>An avid gamer. Half man, half panda, has made it his life's goal to travel throughout the world in order to find the golden ticket into Willy Wonka’s chocolate factory. Studied under the prestigious Monster University to become the ultimate Kung fu master. <strong>NOT</strong> a relative to Po.
+      <br><a href="">View Charles' website</a></p>
+    </div>
+  </div>
+
+  <div class="slideshow">
+    <h3>Production Slideshow</h3>
+    <div id="slide2_container" class="shadow">
+	    <div id="slide2_images">
+		    <img src="assets/video-editing.jpg" />
+		    <img src="assets/video-editing.jpg" />
+		    <img src="assets/video-editing.jpg" />
+		    <img src="assets/video-editing.jpg" />
+	    </div>
+    </div>
+    <p id="slide2_controls">
+      <span class="selected" id="slide2-1">&bull;</span>
+      <span id="slide2-2">&bull;</span>
+      <span id="slide2-3">&bull;</span>
+      <span id="slide2-4">&bull;</span>
+    </p>
+  </div>
+
+  <div id="footer">
+    &copy; 2016 Remee | All rights reserved.
+    	<span style="float:right;">Josh Corken | Michelle Mullen | Haley Rios | Charles Yu</span>
+  </div>
 </body>
-
 </html>
